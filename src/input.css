@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+@theme{
+    --font-playfairy:"Playfair Diplay",sarif;
+    --color-dark_blue:
+}
+@utility container{
+    max-width: 1820px;
+  @apply mx-auto px-3 lg:px-16 pt-6 pb-10;  
+}
+
+.nav-manu{
+  display: none; /* Hide menu initially */
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Active State: Display menu when active class is added */
+.nav-menu.active {
+  display: flex;
+}
+
